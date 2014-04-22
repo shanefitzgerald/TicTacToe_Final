@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TicTacToe</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body x-ng-app="" x-ng-controller="TicTacToeCtrl">
+	<div class="container">
+		<div x-ng-class="{cells: true, bgblue: }" x-ng-repeat="b in board track by $index"> {{ $index }}</button> </div> 
+	</div>
+	
+</body>
+</html>
