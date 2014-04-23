@@ -1,0 +1,26 @@
+for(i = 0; i < 3; ++i)
+		{
+			// Left column
+			if($scope.board[0+i] != "" &&
+				$scope.board[0+i]==$scope.board[3+i] &&
+				$scope.board[3+i]== $scope.board[6+i])
+			{
+				console.log("win - vertical")
+			}
+			if($scope.board[0+(i*3)] != "" &&
+				$scope.board[0]==$scope.board[1] &&
+			  $scope.board[1]== $scope.board[2])
+			{
+				console.log("win - horizontal");
+			}
+			if ($scope.board[0]==$scope.board[8] && 
+				$scope.board[8]==$scope.board[4])
+			{
+				console.log('win - diagonal')
+			}
+			if ($scope.board[2]==$scope.board[4] &&
+				$scope.board[4]==$scope.board[6])
+			{
+				console.log('win - diagonal')
+			}
+		}

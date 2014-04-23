@@ -21,3 +21,32 @@
 // 		onclick innerHTML 'O'
 // 	};
 // };
+
+
+$scope.turn = 0;
+$scope.clicker = function (cellIndex) {
+	$scope.turn++;
+	if ($scope.turn % 2 == 0) {
+		$scope.board[cellIndex]='X';
+	}
+	else 
+		$scope.board[cellIndex]='O'
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TicTacToe</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body x-ng-app="" x-ng-controller="TicTacToeCtrl">
+	<div class="container">
+		<div x-ng-class="{cells:t x-ng-repeat="b in board track by $index"> {{ $index }} </div> 
+	</div>
+	
+</body>
+</html>

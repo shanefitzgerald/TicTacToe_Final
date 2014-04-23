@@ -1,4 +1,21 @@
-.cells {
+header{
+	height:200px;
+	width:auto;
+	text-align: center;
+
+
+}
+.banner{
+	font-size: 100px;
+	margin:0 auto;
+	padding:20px;
+}
+.container{
+	height: 642px;
+	width: 642px;
+	margin: 0 auto;
+}
+.rows {
 	width: 150px;
 	height: 150px;
 	float: left;
@@ -15,15 +32,4 @@
    box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
    text-shadow: -1px -1px #aa3030;
    font-weight: normal;
-}
-
-.container {
-	width: 642px;
-	margin: 0 auto;
-}
-
-.cells:hover   {background: url("img/footballField.jpg"); background-repeat: no-repeat;}
-
-body {
-	
 }
